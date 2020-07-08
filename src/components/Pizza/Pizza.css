@@ -1,0 +1,126 @@
+.Pizza {
+  text-align: center;
+  background-color: white;
+
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  color: #111111;
+  font-weight: 100;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+  grid-template-rows: 1fr 2fr auto auto;
+  grid-template-areas:
+    "head head head images images"
+    "title title title title title"
+    "items items items items items"
+    "footer footer footer footer footer";
+}
+
+.Pizza .head {
+  grid-area: head;
+  text-align: start;
+  padding-left: 5%;
+  line-height: 30px;
+}
+
+.Pizza .head h1 {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.Pizza .images {
+  padding-top: 25px;
+  text-align: end;
+  padding-right: 4.1vw;
+  grid-area: images;
+}
+
+.Pizza .images img {
+  margin: 0 0.2vw 0 0;
+}
+
+.Pizza .group {
+  font-weight: 400;
+}
+
+.Pizza .title {
+  grid-area: title;
+  font-size: calc(26px + 2vw);
+  font-weight: 100;
+  border-bottom: 1px solid lightgray;
+}
+
+.Pizza .items {
+  grid-area: items;
+  margin-bottom: 0;
+}
+
+.Pizza .items .container {
+  margin-bottom: 2%;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 0;
+}
+.Pizza .items .container .item {
+  width: 20%;
+  margin: 2% 5%;
+  border-radius: 10px;
+  font-weight: 300;
+  transition: box-shadow 0.5s ease-out;
+}
+
+.Pizza .items .container .item:hover {
+  box-shadow: 2px 5px 10px rgb(170, 170, 170);
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.Pizza h3 {
+  font-weight: 500;
+}
+.Pizza h4 {
+  font-weight: 500;
+}
+
+.Pizza .container a {
+  text-decoration: none;
+  color: inherit;
+  font-size: calc(26px + 4vw);
+}
+
+.Pizza .head a {
+  text-decoration: none;
+  color: inherit;
+  font-size: calc(26px + 4vw);
+}
+
+.Pizza .footer {
+  grid-area: footer;
+  height: 250px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+}
+
+.Pizza .footer .small {
+  margin-top: 0.5%;
+  width: 20%;
+  font-weight: 100;
+  line-height: 30px;
+}
+
+.Pizza .footer .small h4 {
+  font-weight: 400;
+}
+
+.Pizza .footer .big {
+  width: 40%;
+}
+
+.Pizza .footer .big h1 {
+  margin-top: 70px;
+  font-weight: 100;
+  font-size: 90px;
+}

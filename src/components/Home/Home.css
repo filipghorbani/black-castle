@@ -1,0 +1,99 @@
+.Home {
+  text-align: center;
+  background-color: black;
+  background-repeat: "no-repeat";
+  background-position: "center";
+  background-size: "cover";
+  background-attachment: fixed;
+  position: absolute;
+
+  width: 100%;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  color: #f1f1f1;
+  font-weight: 100;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+  grid-template-rows: 5fr 2fr 5fr;
+  grid-template-areas:
+    "head head head images images"
+    ". item1 item2 item3 ."
+    "location location location location location";
+  transition: backround-image 3s linear;
+}
+
+.Home .head {
+  grid-area: head;
+  text-align: start;
+  padding-left: 5%;
+  line-height: 30px;
+}
+
+.Home .head h1 {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.Home .head a {
+  text-decoration: none;
+  color: inherit;
+  font-size: calc(26px + 4vw);
+}
+
+.Home .images {
+  padding-top: 25px;
+  text-align: end;
+  padding-right: 5vw;
+  grid-area: images;
+  -webkit-filter: invert(1); /* safari 6.0 - 9.0 */
+  filter: invert(1);
+}
+
+.Home .images img {
+  margin: 0 0.2vw 0 0;
+}
+
+.Home .item1 {
+  grid-area: item1;
+}
+
+.Home .item2 {
+  grid-area: item2;
+}
+
+.Home .item3 {
+  grid-area: item3;
+}
+
+.Home .location {
+  grid-area: location;
+  text-shadow: 0px 5px 20px black;
+}
+.Home .item1 a {
+  text-decoration: none;
+  color: inherit;
+  font-size: calc(26px + 4vw);
+}
+.Home .item2 a {
+  text-decoration: none;
+  color: inherit;
+  font-size: calc(26px + 4vw);
+}
+.Home .item3 a {
+  text-decoration: none;
+  color: inherit;
+  font-size: calc(26px + 4vw);
+}
+
+.Home .item1 a:hover {
+  border-bottom: 2px white solid;
+}
+
+.Home .item2 a:hover {
+  border-bottom: 2px white solid;
+}
+
+.Home .item3 a:hover {
+  border-bottom: 2px white solid;
+}
