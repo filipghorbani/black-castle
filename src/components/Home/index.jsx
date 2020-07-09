@@ -11,7 +11,7 @@ import * as ROUTES from "../../constants/routes";
 
 class Home extends Component {
   state = {
-    backgroundImage: carte,
+    backgroundImage: dryck,
   };
 
   changeBackgroundImage(image) {
@@ -57,8 +57,8 @@ class Home extends Component {
         </div>
         <div className="item1">
           <Link
-            onMouseOver={() => this.changeBackgroundImage(pizza)}
-            onMouseOut={() => this.changeBackgroundImage(carte)}
+            //onMouseOver={() => this.changeBackgroundImage(pizza)}
+            //onMouseOut={() => this.changeBackgroundImage(carte)}
             to={ROUTES.PIZZA}
             onClick={() => {
               setTimeout(function () {
@@ -71,8 +71,8 @@ class Home extends Component {
         </div>
         <div className="item2">
           <Link
-            onMouseOver={() => this.changeBackgroundImage(carte)}
-            onMouseOut={() => this.changeBackgroundImage(carte)}
+            //onMouseOver={() => this.changeBackgroundImage(carte)}
+            //onMouseOut={() => this.changeBackgroundImage(carte)}
             to={ROUTES.CARTE}
             onClick={() => {
               setTimeout(function () {
@@ -85,8 +85,8 @@ class Home extends Component {
         </div>
         <div className="item3">
           <Link
-            onMouseOver={() => this.changeBackgroundImage(dryck)}
-            onMouseOut={() => this.changeBackgroundImage(carte)}
+            //onMouseOver={() => this.changeBackgroundImage(dryck)}
+            //onMouseOut={() => this.changeBackgroundImage(carte)}
             to={ROUTES.DRYCK}
             onClick={() => {
               setTimeout(function () {
