@@ -60,7 +60,9 @@ class Home extends Component {
             onMouseOver={() => this.changeBackgroundImage(pizza)}
             onMouseOut={() => this.changeBackgroundImage(carte)}
             to={ROUTES.PIZZA}
-            target={ROUTES.PIZZA}
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
           >
             Pizzor
           </Link>
@@ -70,6 +72,9 @@ class Home extends Component {
             onMouseOver={() => this.changeBackgroundImage(carte)}
             onMouseOut={() => this.changeBackgroundImage(carte)}
             to={ROUTES.CARTE}
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
           >
             À la carte
           </Link>
@@ -79,6 +84,9 @@ class Home extends Component {
             onMouseOver={() => this.changeBackgroundImage(dryck)}
             onMouseOut={() => this.changeBackgroundImage(carte)}
             to={ROUTES.DRYCK}
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
           >
             Dryck
           </Link>
