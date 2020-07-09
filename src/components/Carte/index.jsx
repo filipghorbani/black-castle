@@ -268,7 +268,7 @@ const Carte = () => {
           </p>
         </div>
         <div className="big">
-          <h1>- Black Castle -</h1>
+          <h1>Black Castle</h1>
         </div>
         <div className="small">
           <h4>Öppettider</h4>

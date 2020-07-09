@@ -96,3 +96,18 @@
 .Home .item3 a:hover {
   border-bottom: 2px white solid;
 }
+
+@media only screen and (max-width: 1200px) {
+  .Home {
+    grid-template-columns: 1fr 2fr 3fr 2fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .Home {
+    grid-template-areas:
+      "head head head images images"
+      "item1 item1 item2 item3 item3"
+      "location location location location location";
+  }
+}
