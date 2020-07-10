@@ -1,10 +1,9 @@
 .Home {
   text-align: center;
   background-color: black;
-  background-repeat: "no-repeat";
-  background-position: "center";
-  background-size: "cover";
-  background-attachment: fixed;
+  background: url(../../images/dryck.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
 
   width: 100%;
   height: 100vh;
@@ -19,7 +18,6 @@
     "head head head images images"
     ". item1 item2 item3 ."
     "location location location location location";
-  transition: backround-image 3s linear;
 }
 
 .Home .head {

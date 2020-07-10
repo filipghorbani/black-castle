@@ -3,32 +3,13 @@ import "./Home.css";
 import facebook from "../../images/facebook.svg";
 import pin from "../../images/pin.svg";
 import instagram from "../../images/instagram.svg";
-import carte from "../../images/carte.jpg";
-import pizza from "../../images/pizza.jpg";
-import dryck from "../../images/dryck.jpg";
 import { Link } from "react-router-dom";
 import * as ROUTES from "../../constants/routes";
 
 class Home extends Component {
-  state = {
-    backgroundImage: dryck,
-  };
-
-  changeBackgroundImage(image) {
-    this.setState({ backgroundImage: image });
-  }
-
   render() {
     return (
-      <div
-        style={{
-          backgroundImage: `url(${this.state.backgroundImage})`,
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-        }}
-        className="Home"
-      >
+      <div className="Home">
         <div className="head">
           <Link to={ROUTES.HOME}>
             <h1>Black Castle</h1>
@@ -57,8 +38,6 @@ class Home extends Component {
         </div>
         <div className="item1">
           <Link
-            //onMouseOver={() => this.changeBackgroundImage(pizza)}
-            //onMouseOut={() => this.changeBackgroundImage(carte)}
             to={ROUTES.PIZZA}
             onClick={() => {
               setTimeout(function () {
@@ -71,8 +50,6 @@ class Home extends Component {
         </div>
         <div className="item2">
           <Link
-            //onMouseOver={() => this.changeBackgroundImage(carte)}
-            //onMouseOut={() => this.changeBackgroundImage(carte)}
             to={ROUTES.CARTE}
             onClick={() => {
               setTimeout(function () {
@@ -85,8 +62,6 @@ class Home extends Component {
         </div>
         <div className="item3">
           <Link
-            //onMouseOver={() => this.changeBackgroundImage(dryck)}
-            //onMouseOut={() => this.changeBackgroundImage(carte)}
             to={ROUTES.DRYCK}
             onClick={() => {
               setTimeout(function () {
