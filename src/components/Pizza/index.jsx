@@ -39,7 +39,7 @@ const Pizza = () => {
       <div className="items">
         <div className="group">
           <h3>Grupp 1</h3>
-          <p>Barnpizza 70 kr | Avhämtning 80 kr | Servering 90 kr</p>
+          <p>Barnpizza 75 kr | Avhämtning 85 kr | Servering 95 kr</p>
         </div>
         <div className="container">
           <div className="item">
@@ -73,7 +73,7 @@ const Pizza = () => {
         </div>
         <div className="group">
           <h3>Grupp 2</h3>
-          <p>Barnpizza 80 kr | Avhämtning 85 kr | Servering 95 kr</p>
+          <p>Barnpizza 85 kr | Avhämtning 90 kr | Servering 100 kr</p>
         </div>
         <div className="container">
           <div className="item">
@@ -99,7 +99,7 @@ const Pizza = () => {
         </div>
         <div className="group">
           <h3>Grupp 3</h3>
-          <p>Barnpizza 85 kr | Avhämtning 90 kr | Servering 100 kr</p>
+          <p>Barnpizza 90 kr | Avhämtning 95 kr | Servering 105 kr</p>
         </div>
         <div className="container">
           <div className="item">
@@ -143,7 +143,7 @@ const Pizza = () => {
         </div>
         <div className="group">
           <h3>Grupp 4</h3>
-          <p>Barnpizza 90 kr | Avhämtning 95 kr | Servering 105 kr</p>
+          <p>Barnpizza 95 kr | Avhämtning 100 kr | Servering 110 kr</p>
         </div>
         <div className="container">
           <div className="item">
@@ -175,7 +175,7 @@ const Pizza = () => {
         </div>
         <div className="group">
           <h3>Grupp 5</h3>
-          <p>Barnpizza 105 kr | Avhämtning 110 kr |Servering 120 kr</p>
+          <p>Barnpizza 110 kr | Avhämtning 115 kr |Servering 125 kr</p>
         </div>
         <div className="container">
           <div className="item">

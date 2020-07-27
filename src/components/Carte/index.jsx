@@ -59,14 +59,14 @@ const Carte = () => {
           <div className="item">
             <h4>- Husets Fläskfilé -</h4>
             <p>Serveras på en bädd av varma grönsaker och kantarellsås</p>
-            <p className="italic">169 kr</p>
+            <p className="italic">189 kr</p>
           </div>
           <div className="item">
             <h4>- Fläskfilé Oscar -</h4>
             <p>
               Serveras på en bädd av varma grönsaker, bearnaisesås och sparris
             </p>
-            <p className="italic">179 kr</p>
+            <p className="italic">199 kr</p>
           </div>
           <div className="item">
             <h4>- Black & White -</h4>
@@ -74,29 +74,31 @@ const Carte = () => {
               Oxfilé och fläskfilé ​serveras med varma grönsaker, bearnaisesås
               och rödvinssås
             </p>
-            <p className="italic">215 kr</p>
-          </div>
-          <div className="item">
-            <h4>- Entrecóte -</h4>
-            <p>Serveras med varma grönsaker, vitlök och chilismör</p>
-            <p className="italic">225 kr</p>
+            <p className="italic">235 kr</p>
           </div>
           <div className="item">
             <h4>- Husets Plankstek -</h4>
             <p>Oxfilé med baconlindad haricots verts och bearnaisesås</p>
-            <p className="italic">225 kr</p>
+            <p className="italic">255 kr</p>
           </div>
           <div className="item">
             <h4>- Pepparstek av oxfilé -</h4>
             <p>Serveras med grönpepparsås och varma grönsaker</p>
-            <p className="italic">235 kr</p>
+            <p className="italic">275 kr</p>
           </div>
           <div className="item">
             <h4>- Laxfilé -</h4>
             <p>
               Smörstekt laxfilé med varma grönsaker, vitvinssås och kokt potatis
             </p>
-            <p className="italic">189 kr</p>
+            <p className="italic">210 kr</p>
+          </div>
+          <div className="item">
+            <h4>- Lax på planka -</h4>
+            <p>
+              Serveras med krämig hummersås, citron, dill och varma grönsaker
+            </p>
+            <p className="italic">250 kr</p>
           </div>
         </div>
         <div className="group">
@@ -106,17 +108,17 @@ const Carte = () => {
           <div className="item">
             <h4>- Tortellini -</h4>
             <p>Fyllda med ricotta, spenat, grönsaker och gorgonzolasås</p>
-            <p className="italic">129 kr​</p>
+            <p className="italic">139 kr​</p>
           </div>
           <div className="item">
             <h4>- Kycklingpasta -</h4>
             <p>Kyckling i currysås serveras med säsongens grönsaker</p>
-            <p className="italic">149 kr</p>
+            <p className="italic">159 kr</p>
           </div>
           <div className="item">
             <h4>- Husets Pasta -</h4>
             <p>Oxfilé med säsongens grönsaker, toppas med riven parmesanost</p>
-            <p className="italic">159 kr</p>
+            <p className="italic">179 kr</p>
           </div>
         </div>
         <div className="group">
@@ -160,14 +162,14 @@ const Carte = () => {
             <p className="italic">110 kr</p>
           </div>
           <div className="item">
-            <h4>- Grekisk sallad -</h4>
+            <h4>- Kebabsallad -</h4>
             <p>
-              Fetaost och kalamataoliver serveras på en bädd av blandad sallad
-              med tomat, paprika, rödlök, gurka, och valfri dressing samt
-              nybakat bröd
+              Kebabkött serveras på en bädd av blandad sallad med ost, tomat,
+              paprika, rödlök, gurka, pepperoni och kebabsås
             </p>
-            <p className="italic">120 kr</p>
+            <p className="italic">110 kr</p>
           </div>
+
           <div className="item">
             <h4>- Räksallad -</h4>
             <p>
@@ -181,6 +183,15 @@ const Carte = () => {
             <p>
               Kyckling serveras på en bädd av blandad sallad med tomat, paprika,
               rödlök, gurka, och valfri dressing samt nybakat bröd
+            </p>
+            <p className="italic">120 kr</p>
+          </div>
+          <div className="item">
+            <h4>- Grekisk sallad -</h4>
+            <p>
+              Fetaost och kalamataoliver serveras på en bädd av blandad sallad
+              med tomat, paprika, rödlök, gurka, och valfri dressing samt
+              nybakat bröd
             </p>
             <p className="italic">120 kr</p>
           </div>
@@ -210,9 +221,10 @@ const Carte = () => {
           </div>
           <div className="item">
             <h4>- Kebabtallrik -</h4>
-            <p className="italic">Avhämtning 90 kr | Servering 100 kr</p>
+            <p className="italic">Avhämtning 95 kr | Servering 105 kr</p>
           </div>
         </div>
+        {/* 
         <div className="group">
           <h3>För de minsta</h3>
         </div>
@@ -238,6 +250,7 @@ const Carte = () => {
             <p className="italic">79 kr</p>
           </div>
         </div>
+        
         <div className="group">
           <h3>Desserter</h3>
         </div>
@@ -255,6 +268,7 @@ const Carte = () => {
             <p className="italic">79 kr ​</p>
           </div>
         </div>
+        */}
       </div>
       <div className="footer">
         <div className="small">

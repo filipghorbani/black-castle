@@ -72,7 +72,10 @@ class Home extends Component {
             Dryck
           </Link>
         </div>
-        <div className="location">Rasbo Prästgård 5 - 755 96 - Uppsala</div>
+        <div className="location">
+          <p>Rasbo Prästgård 5 - 755 96 - Uppsala</p>
+          <p>018-36 54 45</p>
+        </div>
       </div>
     );
   }

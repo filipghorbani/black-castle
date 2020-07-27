@@ -49,7 +49,7 @@
 }
 
 .Home .images img {
-  margin: 0 0.2vw 0 0;
+  margin: 0 0 0 3vw;
 }
 
 .Home .item1 {
@@ -67,6 +67,11 @@
 .Home .location {
   grid-area: location;
 }
+
+.Home .location p {
+  margin: 0 0 0.5em 0;
+}
+
 .Home .item1 a {
   text-decoration: none;
   color: inherit;
