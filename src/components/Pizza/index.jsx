@@ -63,7 +63,7 @@ const Pizza = () => {
         {/* {console.log(pizzor)} */}
           {groups.map((group) => (
             <>
-              <h3>Group {group.id}</h3>
+              <h3>Grupp {group.id}</h3>
               <p>Barnpizza {group.Children} kr | Avhämtning {group.Pickup} kr | Servering {group.Serve} kr</p>
               <div className="container">
                 {pizzor.map((pizza) => (
