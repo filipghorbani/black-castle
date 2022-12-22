@@ -10,23 +10,32 @@ import { collection, getDocs, listCollections } from "firebase/firestore";
 
 const Pizza = () => {
 
-  const [groups, setGroups] = useState([])
-  const [pizzor, setPizzor] = useState([])
+  const [groups, setGroups] = useState(JSON.parse(localStorage.getItem('groups')) || [])
+  const [pizzas, setPizzas] = useState(JSON.parse(localStorage.getItem('pizzas')) || [])
   
   useEffect(() => {
     const getData = async() => {
-      const data1 = await getDocs(collection(db, "Groups"));
-      setGroups(data1.docs.map((doc) => ({...doc.data(), id: doc.id})))
+      console.log(groups)
+      if(groups.length == 0) {
+        const data1 = await getDocs(collection(db, "Groups"));
+        setGroups(data1.docs.map((doc) => ({...doc.data(), id: doc.id})))
+      }
 
-      const data2 = await getDocs(collection(db, "Pizzas"));
-      setPizzor(data2.docs.map((doc) => ({...doc.data(), id: doc.id})))
-      // //   querySnapshot2.forEach((doc) => {
-      // //   const data = doc.data()
-      // //   setPizzor([...pizzor, Pizza(data["Name"], data["Desc"], group.name)])  
-      // // });)
+      if(pizzas.length == 0) {
+        const data2 = await getDocs(collection(db, "Pizzas"));
+        setPizzas(data2.docs.map((doc) => ({...doc.data(), id: doc.id})))
+      }
     }
     getData()
   }, [])
+
+useEffect(()=>{
+  localStorage.setItem('groups', JSON.stringify(groups))
+},[groups]);
+
+useEffect(()=>{
+  localStorage.setItem('pizzas', JSON.stringify(pizzas))
+},[pizzas]);
 
 
   return (
@@ -59,14 +68,12 @@ const Pizza = () => {
       </div>
       <div className="title">- Pizzor -</div>
       <div className="items">
-        {/* {console.log(groups)} */}
-        {/* {console.log(pizzor)} */}
-          {groups.map((group) => (
+          { groups && groups.map((group) => (
             <>
               <h3>Grupp {group.id}</h3>
               <p>Barnpizza {group.Children} kr | Avhämtning {group.Pickup} kr | Servering {group.Serve} kr</p>
               <div className="container">
-                {pizzor.map((pizza) => (
+                {pizzas && pizzas.map((pizza) => (
                   <>
                     {pizza.Group == group.id ? 
                     <div className="item">
