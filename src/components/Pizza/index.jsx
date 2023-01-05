@@ -71,7 +71,7 @@ useEffect(()=>{
           { groups && groups.map((group) => (
             <>
               <h3>Grupp {group.id}</h3>
-              <p>Barnpizza {group.Children} kr | Avhämtning {group.Pickup} kr | Servering {group.Serve} kr</p>
+              <h4>Avhämtning {group.Pickup} kr | Servering {group.Serve} kr</h4>
               <div className="container">
                 {pizzas && pizzas.map((pizza) => (
                   <>
@@ -87,6 +87,7 @@ useEffect(()=>{
             </>
           ))
         }
+      <p>Samtliga pizzor finns att få i barnstorlek 10 kr dras från ordinariepris. </p>
       </div>
       <div className="footer">
         <div className="small">

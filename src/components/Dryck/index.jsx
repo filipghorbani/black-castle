@@ -42,44 +42,28 @@ const Dryck = () => {
         </div>
         <div className="container">
           <div className="item">
-            <p>Läsk 33cl</p>
-            <p className="italic">20 kr</p>
-          </div>
-          <div className="item">
-            <p>Mineralvatten</p>
-            <p className="italic">20 kr</p>
-          </div>
-          <div className="item">
-            <p>Juice</p>
-            <p className="italic">20 kr</p>
-          </div>
-          <div className="item">
-            <p>Kaffe</p>
-            <p className="italic">20 kr</p>
-          </div>
-          <div className="item">
-            <p>Te</p>
-            <p className="italic">20 kr</p>
-          </div>
-          <div className="item">
-            <p>Läsk flaska 33cl</p>
-            <p className="italic">25 kr</p>
-          </div>
-          <div className="item">
-            <p>Red Bull</p>
+            <p>Kaffe/Te</p>
             <p className="italic">30 kr</p>
           </div>
           <div className="item">
-            <p>Alkoholfri Briska Päron 33cl</p>
-            <p className="italic">50 kr</p>
+            <p>Läsk/Juice</p>
+            <p className="italic">30 kr</p>
           </div>
           <div className="item">
-            <p>Alkoholfri Mariestad 33cl</p>
+            <p>Lättöl/mineralvatten</p>
+            <p className="italic">30 kr</p>
+          </div>
+          <div className="item">
+            <p>Alkoholfri cider</p>
             <p className="italic">55 kr</p>
           </div>
           <div className="item">
+            <p>Alkoholfri Mariestad</p>
+            <p className="italic">60 kr</p>
+          </div>
+          <div className="item">
             <p>Alkoholfritt Vin</p>
-            <p className="italic">65 kr</p>
+            <p className="italic">75 kr</p>
           </div>
         </div>
         <div className="group">
@@ -87,36 +71,65 @@ const Dryck = () => {
         </div>
         <div className="container">
           <div className="item">
-            <p>Lättöl 33cl</p>
-            <p className="italic">25 kr</p>
-          </div>
-          <div className="item">
-            <p>Mellanöl 33cl</p>
-            <p className="italic">50 kr</p>
-          </div>
-          <div className="item">
-            <p>Sol 33cl</p>
-            <p className="italic">55 kr</p>
-          </div>
-          <div className="item">
             <p>Heineken 33cl</p>
-            <p className="italic">55 kr</p>
+            <p className="italic">60 kr</p>
+          </div>
+          <div className="item">
+            <p>Corona 33cl</p>
+            <p className="italic">65 kr</p>
           </div>
           <div className="item">
             <p>Krusovice Imperial 33cl</p>
-            <p className="italic">55 kr</p>
+            <p className="italic">65 kr</p>
           </div>
           <div className="item">
             <p>Sitting Bulldog IPA 33cl</p>
-            <p className="italic">65 kr</p>
+            <p className="italic">75 kr</p>
           </div>
           <div className="item">
             <p>Sleepy Bulldog Pale Ale 33cl</p>
-            <p className="italic">65 kr</p>
+            <p className="italic">75 kr</p>
           </div>
           <div className="item">
             <p>Mariestad 50cl</p>
-            <p className="italic">65 kr</p>
+            <p className="italic">75 kr</p>
+          </div>
+          <div className="item">
+            <p>Norrlandsguld 50cl</p>
+            <p className="italic">75 kr</p>
+          </div>
+        </div>
+        <div className="group">
+          <h3>Vin</h3>
+        </div>
+        <div className="container">
+          <div className="item">
+            <p>McPherson Chardonnay (Australien)</p>
+            <p className="italic"> 89 kr | 299 kr</p>
+          </div>
+          <div className="item">
+            <p>The Pavillion Chenin Blanc</p>
+            <p className="italic"> 99 kr | 319 kr</p>
+          </div>
+          <div className="item">
+            <p>Cono Sur Reserva Especial Souvignon Blanc</p>
+            <p className="italic"> 359 kr</p>
+          </div>
+          <div className="item">
+            <p>McPherson Shiras (Australien)</p>
+            <p className="italic"> 89 kr | 299 kr</p>
+          </div>
+          <div className="item">
+            <p>The Pavillion Shiraz/Cabernet Sauvignon (Sydafrika) </p>
+            <p className="italic"> 99 kr | 319 kr</p>
+          </div>
+          <div className="item">
+            <p>Single Vineyard Cabernet Sauvignon (Chile)</p>
+            <p className="italic"> 359 kr</p>
+          </div>
+          <div className="item">
+            <p>Rosé</p>
+            <p className="italic"> 89 kr | 299 kr</p>
           </div>
         </div>
         <div className="group">
@@ -124,16 +137,25 @@ const Dryck = () => {
         </div>
         <div className="container">
           <div className="item">
-            <p>Briska Päron 33cl</p>
-            <p className="italic">55 kr</p>
+            <p>Briska Cider 33cl</p>
+            <p className="italic">65 kr</p>
+          </div>
+        </div>
+        <div className="group">
+          <h3>Spritdrycker och drinkar</h3>
+        </div>
+        <div className="container">
+          <div className="item">
+            <p>Vodka/Rom/Gin/Whisky</p>
+            <p className="italic">120 kr / 140 kr</p>
           </div>
           <div className="item">
-            <p>Briska Fläder 33cl</p>
-            <p className="italic">55 kr</p>
+            <p>GT/Irish Coffee/Margarita/White Russian</p>
+            <p className="italic">125 kr / 145 kr</p>
           </div>
           <div className="item">
-            <p>Briska Sunny Apple EKO 33cl</p>
-            <p className="italic">55 kr</p>
+            <p>Cognac/Jack Daniel`s/Single Malt Whisk</p>
+            <p className="italic">150 kr / 180 kr</p>
           </div>
         </div>
       </div>
