@@ -6,7 +6,7 @@ import "./Pizza.css";
 import { Link } from "react-router-dom";
 import * as ROUTES from "../../constants/routes";
 import { db } from "../../firebase.js";
-import { collection, getDocs, listCollections } from "firebase/firestore"; 
+import { collection, getDocs } from "firebase/firestore";
 
 const Pizza = () => {
 
@@ -15,10 +15,10 @@ const Pizza = () => {
   
   useEffect(() => {
     const getData = async() => {
-      console.log(groups)
       if(groups.length == 0) {
         const data1 = await getDocs(collection(db, "Groups"));
         setGroups(data1.docs.map((doc) => ({...doc.data(), id: doc.id})))
+        console.log(groups)
       }
 
       if(pizzas.length == 0) {
